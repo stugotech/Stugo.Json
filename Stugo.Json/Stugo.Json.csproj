@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -31,13 +31,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="fastJSON, Version=2.5.0.0, Culture=neutral, PublicKeyToken=6b75a806b86095cd, processorArchitecture=MSIL">
+      <HintPath>..\packages\PowerJSON.2.5.0.1\lib\net40\fastJSON.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Stugo.Json.nuspec" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="IJsonSerializer.cs" />
+    <Compile Include="JsonSerializer.cs" />
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\VersionInfo.cs" />
