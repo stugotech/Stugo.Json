@@ -6,6 +6,9 @@
     <authors>Stugo Ltd</authors>
     <description>Abstracts JSON serialisation/deserialisation</description>
     <copyright>Copyright © Stugo Ltd 2016</copyright>
+    <dependencies>
+      <dependency id="PowerJSON" version="[2.5.0.1, 2.6)" />
+    </dependencies>
   </metadata>
   <files>
     <file src="bin\net40\*.*" target="lib\net40" />
