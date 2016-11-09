@@ -11,6 +11,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\net40\*.*" target="lib\net40" />
+    <file src="bin\net40\Stugo.Json.dll" target="lib\net40\" />
+    <file src="bin\net40\Stugo.Json.pdb" target="lib\net40\" />
   </files>
 </package>
